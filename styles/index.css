@@ -4,33 +4,10 @@
 }
 
 /* CSS Classes */
-
-.metal-border {
-    border: 8px solid transparent;
-    border-image: url(../src/assets/art/metal-border.png) 6;
-    border-image-width: 35px;
-    box-sizing: border-box;
-
-    height: 100%;
-    padding: 2em;
+.button img {
+    width: 15em;
+    height: 7em;
     margin: 2em;
-
-    color: #4e79bf;
-}
-
-.pfp{
-    aspect-ratio: 1 / 1;
-
-    width: 100%;
-    height: auto;
-
-    border: 30px solid transparent;
-    border-image: url(../src/assets/art/metal-border.png) 6;
-    box-sizing: border-box;
-
-    object-fit: cover;
-    object-position: center;
-    image-rendering: pixelated;
 }
 
 /* Applies a custom pixel art font to all text */
@@ -44,7 +21,7 @@ body {
     background-image: url("../src/assets/art/third-party/midnight-clouds/1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4e79bf;
+    background-color: #19265d;
     image-rendering: pixelated;
 }
 
