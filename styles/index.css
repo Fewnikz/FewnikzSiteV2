@@ -3,42 +3,83 @@
     src: url('../src/assets/fonts/PixelatedEleganceRegular-ovawB.ttf');
 }
 
+/* CSS Classes */
+
+.metal-border {
+    border: 8px solid transparent;
+    border-image: url(../src/assets/art/metal-border.png) 6;
+    border-image-width: 35px;
+    box-sizing: border-box;
+
+    height: 100%;
+    padding: 2em;
+    margin: 2em;
+
+    color: #4e79bf;
+}
+
+.pfp{
+    aspect-ratio: 1 / 1;
+
+    width: 100%;
+    height: auto;
+
+    border: 30px solid transparent;
+    border-image: url(../src/assets/art/metal-border.png) 6;
+    box-sizing: border-box;
+
+    object-fit: cover;
+    object-position: center;
+    image-rendering: pixelated;
+}
+
 /* Applies a custom pixel art font to all text */
 *  {
     font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
 }
 
-h1 {
-    text-align: center;
-    color: cornflowerblue;
-    font-size: 2.5em;
-}
+/* HTML Elements */
 
 body {
     background-image: url("../src/assets/art/third-party/midnight-clouds/1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #1a275c;
+    background-color: #4e79bf;
     image-rendering: pixelated;
 }
 
-.grid-container-3-9 {
-    display: grid;
-    grid-template-columns: 3fr 9fr;
-    gap: 5%;
-    width: 75%;
-    margin: auto;
+h1 {
+    text-align: center;
+    color: #4e79bf;
+    font-size: 3em;
 }
 
-.metal-border {
-    border: 15px solid transparent;
-    color: cornflowerblue;
-    border-image: url(../src/assets/art/metal-border.png) 5;
+h2 {
+    text-align: left;
+    color: #4e79bf;
+    font-size: 2em;
+    text-decoration: underline;
 }
 
-.pfp{
-    border: 15px solid transparent;
-    border-image: url(../src/assets/art/metal-border.png) 5;
-    width: 100%;
-    height: 100%;
+h3 {
+    text-align: left;
+    color: #4e79bf;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
+    font-size: 1.2rem;
+}
+
+p img {
+    height: 3em;
+    position: relative;
+    top: -1.2em;
+    vertical-align: top;
+    image-rendering: pixelated;
+}
+
+figcaption {
+    color: #4e79bf;
 }

@@ -1,0 +1,13 @@
+/* Grid */
+
+.grid-container-3-9 {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    width: 80%;
+    margin: auto;
+
+    /* Align top items neatly if columns vary in height */
+    align-items: center;
+}
+
+/* Flex */
