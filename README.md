@@ -1,8 +1,6 @@
 # FewnikzSiteV2
 
-WIP - NOT FINISHED YET: This is my personal site thing? I made for a school project. The reason it's called V2, is because I have already made a a person website... but it kinda sucks and making a new one is fun and for school of course
-
-
+WIP - NOT FINISHED YET: This is my personal site thing? I made for a school project. The reason it's called V2, is because I have already made a personal website... but it kinda sucks and making a new one is fun, and for school of course
 
 ## License
 
