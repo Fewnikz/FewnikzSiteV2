@@ -10,6 +10,14 @@
 
 /* HTML Elements */
 
+body {
+    background-image: url("../src/assets/art/third-party/midnight-clouds/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #19265d;
+    image-rendering: pixelated;
+}
+
 ul {
     display: inline-block;
     text-align: left;
