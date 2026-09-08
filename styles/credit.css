@@ -1,3 +1,7 @@
+:root {
+    --primary-bg-text-color: orange;
+}
+
 /* CSS Classes */
 
 .credit-list {
@@ -10,5 +14,5 @@ ul {
     display: inline-block;
     text-align: left;
     list-style-type: square;
-    color: orange;
+    color: var(--primary-bg-text-color);
 }

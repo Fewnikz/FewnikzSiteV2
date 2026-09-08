@@ -1,18 +1,8 @@
-@font-face {
-    font-family: 'PixilatedElegance';
-    src: url('../src/assets/fonts/PixelatedEleganceRegular-ovawB.ttf');
-}
-
 /* CSS Classes */
 .button img {
     width: 15em;
     height: 7em;
     margin: 2em;
-}
-
-/* Applies a custom pixel art font to all text */
-*  {
-    font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
 }
 
 /* HTML Elements */
@@ -22,38 +12,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #19265d;
-    image-rendering: pixelated;
-}
-
-h1 {
-    text-align: center;
-    color: #4e79bf;
-    font-size: 3em;
-}
-
-h2 {
-    text-align: left;
-    color: #4e79bf;
-    font-size: 2em;
-    text-decoration: underline;
-}
-
-h3 {
-    text-align: left;
-    color: #4e79bf;
-    font-size: 1.5em;
-}
-
-p {
-    font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
-    font-size: 1.2rem;
-}
-
-p img {
-    height: 3em;
-    position: relative;
-    top: -1.2em;
-    vertical-align: top;
     image-rendering: pixelated;
 }
 
