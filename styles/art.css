@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'PixilatedElegance';
+    src: url('../src/assets/fonts/PixelatedEleganceRegular-ovawB.ttf');
+}
+
+* {
+    font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
+}
+
+body {
+    background-image: url("../src/assets/art/white-stone-bricks.png");
+    background-repeat: repeat;
+    background-size: 256px;
+    image-rendering: pixelated;
+}
