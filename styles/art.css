@@ -20,18 +20,37 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    width: 90%;
+    margin: auto;
     gap: 1.2em;
 }
 
-.art-item {
-    border: 8px solid transparent;
-    border-image: url(assets/art/art-border.png) 6;
-    border-image-width: 35px;
+.pixel-frame-notched {
+    max-width: 30vh;
+    height: 30vh;
     box-sizing: border-box;
 
-    width: 30vh;
-    height: 30vh;
+    /* Inner border color */
+    border: 8px solid #a33818;
+
+    /* Outer pixel outline and corner notches */
+    /* The comment under is there to help show which value is being changed in the box shadow */
+    /* box-shadow: X-offset | Y-offset | Blur-radius | Spread-radius | Color */
+    box-shadow:
+            0 -4px 0 0 #5a1a08,
+            0 4px 0 0 #5a1a08,
+            -4px 0 0 0 #5a1a08,
+            4px 0 0 0 #5a1a08;
+
+    margin: 4px;
+}
+
+.pixel-frame-notched img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    display: block;
 }
 
 .none-pixilated {
