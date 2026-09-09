@@ -1,15 +1,39 @@
 @font-face {
     font-family: 'PixilatedElegance';
-    src: url('../src/assets/fonts/PixelatedEleganceRegular-ovawB.ttf');
+    src: url('../assets/fonts/PixelatedEleganceRegular-ovawB.ttf');
 }
 
 * {
     font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
+    image-rendering: pixelated;
 }
 
 body {
-    background-image: url("../src/assets/art/white-stone-bricks.png");
+    background-image: url("../assets/art/white-stone-bricks.png");
     background-repeat: repeat;
     background-size: 256px;
-    image-rendering: pixelated;
+}
+
+.art-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+
+.art-item {
+    border: 8px solid transparent;
+    border-image: url(assets/art/art-border.png) 6;
+    border-image-width: 35px;
+    box-sizing: border-box;
+
+    width: 30vh;
+    height: 30vh;
+    object-fit: contain;
+}
+
+.none-pixilated {
+    image-rendering: auto;
 }

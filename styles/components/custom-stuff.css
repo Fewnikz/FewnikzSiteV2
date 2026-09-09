@@ -1,7 +1,7 @@
 /* Here I will create styling that uses custom sprites. Like the image border */
 .metal-border {
     border: 8px solid transparent;
-    border-image: url(../../src/assets/art/metal-border.png) 6;
+    border-image: url(../../assets/art/metal-border.png) 6;
     border-image-width: 35px;
     box-sizing: border-box;
 
@@ -14,7 +14,7 @@
 
 .metal-border-nav {
     border: 8px solid transparent;
-    border-image: url(../../src/assets/art/metal-border.png) 6;
+    border-image: url(../../assets/art/metal-border.png) 6;
     border-image-width: 35px;
     box-sizing: border-box;
 
@@ -33,7 +33,7 @@
     height: auto;
 
     border: 30px solid transparent;
-    border-image: url(../../src/assets/art/metal-border.png) 6;
+    border-image: url(../../assets/art/metal-border.png) 6;
     box-sizing: border-box;
 
     object-fit: cover;
