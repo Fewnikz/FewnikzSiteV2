@@ -11,3 +11,11 @@ body {
 figcaption {
     color: #4e79bf;
 }
+
+hr {
+    height: 0.5em;
+    color: #4e79bf;
+    background-color: #4e79bf;
+    margin: auto auto 3em auto;
+    width: 75%;
+}
