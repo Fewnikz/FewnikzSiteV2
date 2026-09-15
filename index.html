@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Fewnikz Site</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/components/button.css"/>
+    <link rel="stylesheet" href="styles/components/grid-and-flex.css">
+    <link rel="stylesheet" href="styles/components/text.css">
+    <link rel="stylesheet" href="styles/components/custom-stuff.css">
 </head>
+
 <header>
-    <h1>Welcome to Fewnikz Site!</h1>
+    <h1 class="h1-center">Welcome to Fewnikz Site!</h1>
+    <hr>
 </header>
 <body>
-<div class="metal-border">
-    This is some cool text
-</div>
-<img id="moon" src="./src/assets/art/third-party/midnight-clouds/2.png" alt="A pixel art image of a moon">
+
+<!-- About Section and buttons -->
+<section>
+    <div class="grid-container-3-9">
+        <figure>
+            <img class="pfp-metal-border" src="assets/art/showcase/2026/06-09-2026-Fewnikz-pfp.png" alt="A Picture of Fewnikz the Raccoon in pixel art" />
+
+            <figcaption>
+                <h3>Image of Fewnikz Da Raccoon!</h3>
+                <p>Fewnikz is my game dev mascot... Definitely not a fursona :3</p>
+            </figcaption>
+        </figure>
+
+        <div class="metal-border">
+            <h2>About me?</h2>
+            <p>
+                Yo the name's Fewnikz and I like programing, computers, games and art<br/>
+                I am a big Nintendo and Sonic nerd 🦔. Indie games like Undertale and Tunic are also pretty dope! <br/>
+                Bit, of an anthro fan not gonna lie 🐾 Love the creative stuff of that 🎨. <br/>
+                I also use Arch btw! 🤓☝️... Okay the arch part was a bit cringe... But u know I had to do it for the memes... <br/>
+                Also, raccoons are very cool <img src="assets/art/raccoon-pixel-emoji.png" alt="Emoji of a raccoon face" />
+            </p>
+            <h2>About this site?</h2>
+            <p>
+                On this site I will share stuff, I have created or like.
+                Some of the stuff I create are games, art, programing
+                and probably more, but I am too lazy to write it all down. <br>
+                Anyway explorer the site! Maybe There is hidden stuff on it. If not, then you can check out other pages on the buttons below.
+            </p>
+        </div>
+
+        <!-- Buttons that go to other site pages -->
+        <!-- Making empty div element to make the buttons be on the second grid column -->
+        <div></div>
+        <section>
+            <nav>
+                    <span class="flex-container">
+                        <a href="credit.html">
+                            <div class="button">
+                                <img src="assets/art/buttons/credit-button.png" alt="Credit button"
+                                     onmouseover="this.src='assets/art/buttons/credit-button-hover.png'"
+                                     onmouseleave="this.src='assets/art/buttons/credit-button.png'"
+                                     onmousedown="this.src='assets/art/buttons/credit-button-click.png'"
+                                />
+                            </div>
+                        </a>
+                        <a href="art.html">
+                            <div class="button">
+                                <img src="assets/art/buttons/art-button.png" alt="Art button"
+                                     onmouseover="this.src='assets/art/buttons/art-button-hover.png'"
+                                     onmouseleave="this.src='assets/art/buttons/art-button.png'"
+                                     onmousedown="this.src='assets/art/buttons/art-button-click.png'"/>
+                            </div>
+                        </a>
+                        <!-- For now the games button is deactivated
+                        <a href="games.html">
+                            <div class="button">
+                                <img src="assets/art/buttons/games-button.png" alt="Art button"
+                                     onmouseover="this.src='assets/art/buttons/games-button-hover.png'"
+                                     onmouseleave="this.src='assets/art/buttons/games-button.png'"
+                                     onmousedown="this.src='assets/art/buttons/games-button-click.png'"/>
+                            </div>
+                        </a>
+                        -->
+                    </span>
+            </nav>
+        </section>
+    </div>
+</section>
+
 </body>
 </html>

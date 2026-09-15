@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'PixilatedElegance';
+    src: url('../assets/fonts/PixelatedEleganceRegular-ovawB.ttf');
+}
+
+:root {
+    --primary-bg-text-color: #8d3f00;
+    --secondary-bg-text-color: black;
+}
+
+* {
+    font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
+    image-rendering: pixelated;
+}
+
+body {
+    background-image: url("../assets/art/white-stone-bricks.png");
+    background-repeat: repeat;
+    background-size: 256px;
+}
+
+.art-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 90%;
+    margin: auto;
+    gap: 1.2em;
+}
+
+.pixel-frame-notched {
+    max-width: 30vh;
+    height: 30vh;
+    box-sizing: border-box;
+
+    /* Inner border color */
+    border: 8px solid #a33818;
+
+    /* Outer pixel outline and corner notches */
+    /* The comment under is there to help show which value is being changed in the box shadow */
+    /* box-shadow: X-offset | Y-offset | Blur-radius | Spread-radius | Color */
+    box-shadow:
+            0 -4px 0 0 #5a1a08,
+            0 4px 0 0 #5a1a08,
+            -4px 0 0 0 #5a1a08,
+            4px 0 0 0 #5a1a08;
+
+    margin: 4px;
+}
+
+.pixel-frame-notched img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.none-pixilated {
+    image-rendering: auto;
+}

@@ -1,0 +1,32 @@
+/* Grid */
+
+.grid-container-3-9 {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    width: 80%;
+    margin: auto;
+
+    /* Align top items neatly if columns vary in height */
+    align-items: center;
+}
+
+@media screen and (max-width: 1064px) {
+    .grid-container-3-9 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* Flex */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5em;
+}

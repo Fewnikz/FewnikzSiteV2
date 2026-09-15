@@ -1,3 +1,13 @@
+:root {
+    --primary-bg-text-color: #08b208;
+}
+
+/* CSS Classes */
+
+.credit-list {
+    text-align: center;
+}
+
 /* HTML Elements */
 
 body {
@@ -8,14 +18,9 @@ body {
     image-rendering: pixelated;
 }
 
-figcaption {
-    color: #4e79bf;
-}
-
-hr {
-    height: 0.5em;
-    color: #4e79bf;
-    background-color: #4e79bf;
-    margin: auto auto 3em auto;
-    width: 75%;
+ul {
+    display: inline-block;
+    text-align: left;
+    list-style-type: square;
+    color: var(--primary-bg-text-color);
 }
