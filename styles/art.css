@@ -3,6 +3,11 @@
     src: url('../assets/fonts/PixelatedEleganceRegular-ovawB.ttf');
 }
 
+:root {
+    --primary-bg-text-color: #8d3f00;
+    --secondary-bg-text-color: black;
+}
+
 * {
     font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
     image-rendering: pixelated;
