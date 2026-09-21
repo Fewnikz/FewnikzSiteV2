@@ -18,4 +18,6 @@ hr {
     background-color: #4e79bf;
     margin: auto auto 3em auto;
     width: 75%;
+
+    border: transparent; /* Making border transparent so it can't be seen on chromium based browser */
 }
