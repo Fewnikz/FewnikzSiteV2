@@ -2,9 +2,10 @@ const artFrames = document.getElementById("art-frames")
 
 function createArtFrame(imageSrc, imageAlt) {
     // Creating the elements needed to create the art frame
-    // And appends the elements to element that has the id art-frames
     let divElement = document.createElement("div");
     let imgElement = document.createElement("img");
+
+    // And appends the elements to element that has the id art-frames
     artFrames.appendChild(divElement);
     divElement.appendChild(imgElement);
 
@@ -25,7 +26,7 @@ async function loadArtFrames() {
     const json = await response.json();
 
     try {
-        for (let i = 0; i < json.length; i++) {
+        for (let i = json.length - 1; i >= 0; i--) {
             createArtFrame(
                 json[i].image,
                 json[i].alt
