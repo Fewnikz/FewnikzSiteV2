@@ -1,0 +1,49 @@
+/* HTML Elements */
+html {
+    height: 100%;
+}
+
+body {
+    background-image:
+            url("../assets/art/third-party/midnight-clouds/moon.png"),
+            url("../assets/art/third-party/midnight-clouds/4.png"),
+            url("../assets/art/third-party/midnight-clouds/3.png"),
+            url("../assets/art/third-party/midnight-clouds/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed; /* Background does not move when scrolling */
+    background-color: #19265d;
+    image-rendering: pixelated;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CSS Classes */
+.games-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 90%;
+    margin: auto;
+    gap: 1.2em;
+}
+
+.coming-soon {
+    text-align: center;
+    color: var(--primary-bg-text-color);
+    font-size: 3em;
+}

@@ -6,9 +6,22 @@
     left: 1%;
 }
 
-/* CSS Classes */
-.button img {
-    width: 15em;
-    height: 7em;
-    margin: 2em;
+/* Base for buttons that use cool pixel art image :D */
+.image-button {
+    display: block;
+    width: 13em;
+    aspect-ratio: 32 / 17; /* Same ratio as the sprites for the buttons so there is no empty space */
+
+    cursor: pointer;
+    border: none;
+    /* Properties for the button's background image. That make it display correctly */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.image-button:focus-visible {
+    outline: 3px solid var(--primary-bg-text-color);
 }

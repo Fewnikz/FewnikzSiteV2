@@ -1,5 +1,4 @@
 /* Grid */
-
 .grid-container-3-9 {
     display: grid;
     grid-template-columns: 3fr 9fr;
@@ -8,6 +7,11 @@
 
     /* Align top items neatly if columns vary in height */
     align-items: center;
+}
+
+/* Place an item in the second column - It's ignored when the grid turns into flex on small screens */
+.grid-column-2 {
+    grid-column: 2;
 }
 
 @media screen and (max-width: 1064px) {
@@ -22,11 +26,18 @@
 }
 
 /* Flex */
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
     gap: 0.5em;
+}
+
+.flex-gap-large {
+    gap: 2em;
+}
+
+.flex-gap-x-large {
+    gap: 4em;
 }

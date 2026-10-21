@@ -4,7 +4,7 @@
 }
 
 :root {
-    --primary-bg-text-color: #4e79bf;
+    --primary-bg-text-color: #4c84df;
     --p-font-size: 1.2rem
 }
 
@@ -54,6 +54,19 @@ h3 {
 p {
     font-family: 'PixilatedElegance', monospace, Courier, Lucida Console, Monaco;
     font-size: var(--p-font-size);
+}
+
+/* Hides text but keeps it readable for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 p img {

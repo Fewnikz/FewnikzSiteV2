@@ -3,29 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Fewnikz - Art</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fewnikz Art – Pixel Art & Drawings Gallery</title>
+    <meta name="description" content="A gallery of pixel art, digital drawings and drawings... Basically just art by Fewnikz, from 2025 to 2026.">
+    <link rel="canonical" href="https://fewnikz.neocities.org/pages/art.html">
+    <link rel="icon" type="image/png" href="../assets/art/showcase/2026/id-05-date-06-09-2026-Fewnikz-pfp.png">
+
+    <!-- Open Graph - It's used when the page is shared on dicord or other chats. It tells how to show the preview of the page -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Fewnikz Site">
+    <meta property="og:url" content="https://fewnikz.neocities.org/pages/art.html">
+    <meta property="og:title" content="Fewnikz Art – Pixel Art & Drawings Gallery">
+    <meta property="og:description" content="A gallery of pixel art, digital drawings and drawings... Basically just art by Fewnikz, from 2025 to 2026.">
+    <meta property="og:image" content="https://fewnikz.neocities.org/assets/art/showcase/2026/id-05-date-06-09-2026-Fewnikz-pfp.png">
+    <meta property="og:image:alt" content="A Picture of Fewnikz the Raccoon in pixel art">
+
+
     <link rel="stylesheet" href="../styles/components/text.css">
     <link rel="stylesheet" href="../styles/components/button.css">
     <link rel="stylesheet" href="../styles/art.css">
+    <script src="../javascript/art-frames.js" defer></script>
 </head>
+
+<body>
 
 <header>
     <h1 class="h1-center">Fewnikz - Art Site</h1>
     <h2 class="h2-center">Here you can see some of my art, that I have made... It kinda sucks, but it's cool and was fun to make :D</h2>
 </header>
 
-<body>
-    <h3 class="h3-center">2025 - 2026</h3>
-    <div class="art-container" id="art-frames">
-        <!-- Art frames created by JavaScript -->
-    </div>
-    <a href="index.html">
-        <img class="back-button" src="../assets/art/back-arrow.png" alt="Back arrow"/>
+<main>
+    <section aria-labelledby="art-2025-2026">
+        <h3 class="h3-center" id="art-2025-2026">2025 - 2026</h3>
+        <div class="art-container" id="art-frames">
+            <!-- Art frames created by JavaScript -->
+        </div>
+    </section>
+</main>
+
+<nav aria-label="Back">
+    <a href="../index.html">
+        <img class="back-button" src="../assets/art/back-arrow.png" alt="Back to the home page"/>
     </a>
+</nav>
+
 </body>
-<script src="../javascript/art-frames.js"></script>
-<script type="text/javascript"> window.onload = () => {
-    loadArtFrames();
-}
-</script>
 </html>

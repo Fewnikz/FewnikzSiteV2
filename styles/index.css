@@ -1,11 +1,18 @@
 /* HTML Elements */
-
 body {
-    background-image: url("../assets/art/third-party/midnight-clouds/1.png");
+    background-image: 
+    url("../assets/art/third-party/midnight-clouds/1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed; /* Background does not move when scrolling */
     background-color: #19265d;
     image-rendering: pixelated;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
 }
 
 figcaption {
@@ -20,4 +27,42 @@ hr {
     width: 75%;
 
     border: transparent; /* Making border transparent so it can't be seen on chromium based browser */
+}
+
+/* Buttons for the site */
+/* Shared size and layout comes from .image-button in components/button.css */
+.credit-button {
+    background-image: url("../assets/art/buttons/index/credit-button.png");
+}
+
+.credit-button:hover {
+    background-image: url("../assets/art/buttons/index/credit-button-hover.png");
+}
+
+.credit-button:active {
+    background-image: url("../assets/art/buttons/index/credit-button-click.png");
+}
+
+.art-button {
+    background-image: url("../assets/art/buttons/index/art-button.png");
+}
+
+.art-button:hover {
+    background-image: url("../assets/art/buttons/index/art-button-hover.png");
+}
+
+.art-button:active {
+    background-image: url("../assets/art/buttons/index/art-button-click.png");
+}
+
+.games-button {
+    background-image: url("../assets/art/buttons/index/games-button.png");
+}
+
+.games-button:hover {
+    background-image: url("../assets/art/buttons/index/games-button-hover.png");
+}
+
+.games-button:active {
+    background-image: url("../assets/art/buttons/index/games-button-click.png");
 }
