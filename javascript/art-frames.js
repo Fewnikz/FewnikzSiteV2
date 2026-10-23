@@ -1,4 +1,6 @@
 const artFrames = document.getElementById("art-frames")
+const framePreview = document.getElementById("frame-preview")
+const framePreviewImg = document.getElementById("frame-preview-img")
 
 function createArtFrame(imageSrc, imageAlt) {
     // Creating the elements needed to create the art frame
@@ -16,6 +18,12 @@ function createArtFrame(imageSrc, imageAlt) {
     imgElement.src = imageSrc;
     imgElement.alt = imageAlt;
     imgElement.loading = "lazy";
+
+    figureElement.onclick = function () {
+        framePreview.showModal()
+        framePreviewImg.src = imageSrc;
+        framePreviewImg.alt = imageAlt;
+    }
 }
 
 async function loadArtFrames() {
