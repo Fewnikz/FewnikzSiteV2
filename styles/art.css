@@ -75,18 +75,47 @@ body {
 /* Class for the styling of the preview of the frame */
 .frame-preview {
     margin: auto;
-    max-width: 75vh;
-    height: 75vh;
+    width: min(90vw, 75vh);
+    max-height: 90vh;
+    padding: 1em;
+
+    border: 8px solid #5a1a08;
+    background-color: #a33818;
+}
+
+/* Removes the Chrome based browsers focus border thing thats black and white. 
+Which appears when the dialog opens and gets focus */
+.frame-preview:focus,
+.frame-preview:focus-visible {
+    outline: none;
 }
 
 .frame-preview figure {
-    margin: auto;
-    width: 100%;
-    height: 100%;
+    margin: 0;
+
+    background: transparent;
+    border: none;
 }
 
-.frame-preview img{
-    margin: auto;
+.frame-preview img {
+    display: block;
     width: 100%;
-    height: 100%;
+    height: 65vh;
+    object-fit: contain;
+}
+
+.frame-preview figcaption {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.frame-preview figcaption span {
+    display: block;
+}
+
+.view-more-text {
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
 }

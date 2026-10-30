@@ -29,7 +29,14 @@
 
 <dialog id="frame-preview" class="frame-preview">
     <figure>
-        <img id="frame-preview-img" src="../assets/art/showcase/2026/id-05-date-06-09-2026-Fewnikz-pfp.png" alt="test">
+        <img id="frame-preview-img" />
+        <figcaption>
+            <span id="frame-preview-title" aria-label="Title of the art frame"></span>
+            <span id="frame-preview-date" aria-label="Date of the art frame"></span>
+            <span id="frame-preview-description" style="display: none;"></span>
+            <span id="view-more-text" class="view-more-text" onclick="viewMoreDetails()">View more</span>
+            <span id="view-less-text" class="view-more-text" onclick="viewLessDetails()" style="display: none;">View less</span>
+        </figcaption>
     </figure>
 </dialog>
 

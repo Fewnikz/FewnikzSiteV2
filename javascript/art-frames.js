@@ -1,8 +1,31 @@
 const artFrames = document.getElementById("art-frames")
 const framePreview = document.getElementById("frame-preview")
 const framePreviewImg = document.getElementById("frame-preview-img")
+const framePreviewTitle = document.getElementById("frame-preview-title")
+const framePreviewDate = document.getElementById("frame-preview-date")
+const framePreviewDescription = document.getElementById("frame-preview-description")
+const viewMoreText = document.getElementById("view-more-text")
+const viewLessText = document.getElementById("view-less-text")
 
-function createArtFrame(imageSrc, imageAlt) {
+function viewMoreDetails() 
+{
+    framePreviewDescription.style.display = "block";
+    viewMoreText.style.display = "none";
+    viewLessText.style.display = "block";
+}
+
+function viewLessDetails() {
+    framePreviewDescription.style.display = "none";
+    viewMoreText.style.display = "block";
+    viewLessText.style.display = "none";
+}
+
+function createArtFrame(imgSrc,
+    imgAlt,
+    imgTitle,
+    imgDate,
+    imgDescription
+) {
     // Creating the elements needed to create the art frame
     let figureElement = document.createElement("figure");
     let imgElement = document.createElement("img");
@@ -15,14 +38,17 @@ function createArtFrame(imageSrc, imageAlt) {
     figureElement.className = "pixel-frame-notched";
 
     // Applying properties
-    imgElement.src = imageSrc;
-    imgElement.alt = imageAlt;
+    imgElement.src = imgSrc;
+    imgElement.alt = imgAlt;
     imgElement.loading = "lazy";
 
     figureElement.onclick = function () {
         framePreview.showModal()
-        framePreviewImg.src = imageSrc;
-        framePreviewImg.alt = imageAlt;
+        framePreviewImg.src = imgSrc;
+        framePreviewImg.alt = imgAlt;
+        framePreviewTitle.textContent = imgTitle;
+        framePreviewDate.textContent = imgDate;
+        framePreviewDescription.textContent = imgDescription;
     }
 }
 
@@ -39,8 +65,10 @@ async function loadArtFrames() {
         for (let i = json.length - 1; i >= 0; i--) {
             createArtFrame(
                 json[i].image,
-                // Goes back to the title when the alt text has not been written yet
-                json[i].alt || json[i].title
+                json[i].alt,
+                json[i].title,
+                json[i].date,
+                json[i].description
             );
         }
     } catch(e) {
