@@ -1,3 +1,8 @@
+:root {
+    --aspect-ratio-button-image: 32 / 17;
+    --width-button-image: 13em;
+}
+
 .back-button {
     position: fixed;
     width: 15%;
@@ -6,11 +11,15 @@
     left: 1%;
 }
 
+.close-button {
+    background-image: url(../../assets/art/clsoe-button.png);
+}
+
 /* Base for buttons that use cool pixel art image :D */
 .image-button {
     display: block;
-    width: 13em;
-    aspect-ratio: 32 / 17; /* Same ratio as the sprites for the buttons so there is no empty space */
+    width: var(--width-button-image);
+    aspect-ratio: var(--aspect-ratio-button-image); /* Same ratio as the sprites for the buttons so there is no empty space */
 
     cursor: pointer;
     border: none;

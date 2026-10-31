@@ -6,6 +6,8 @@
 :root {
     --primary-bg-text-color: #8d3f00;
     --secondary-bg-text-color: black;
+    --aspect-ratio-button-image: 16 / 16;
+    --width-button-image: 6em;
 }
 
 * {
@@ -111,7 +113,7 @@ Which appears when the dialog opens and gets focus */
 }
 
 .frame-preview figcaption span {
-    display: block;
+    display: none;
 }
 
 .view-more-text {

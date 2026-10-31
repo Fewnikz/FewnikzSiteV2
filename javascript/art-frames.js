@@ -9,22 +9,28 @@ const viewLessText = document.getElementById("view-less-text")
 
 function viewMoreDetails() 
 {
-    framePreviewDescription.style.display = "block";
-    viewMoreText.style.display = "none";
-    viewLessText.style.display = "block";
+    document.querySelectorAll("span").forEach(span => {
+        span.style.display = "block"
+        viewMoreText.style.display = "none"
+        viewLessText.style.display = "block"
+    });
 }
 
 function viewLessDetails() {
-    framePreviewDescription.style.display = "none";
-    viewMoreText.style.display = "block";
-    viewLessText.style.display = "none";
+    document.querySelectorAll("span").forEach(span => {
+        span.style.display = "none"
+        framePreviewTitle.style.display = "block"
+        viewMoreText.style.display = "block"
+        viewLessText.style.display = "none"
+    });
 }
 
-function createArtFrame(imgSrc,
+function createArtFrame(
+    imgSrc,
     imgAlt,
     imgTitle,
-    imgDate,
-    imgDescription
+    imgDescription,
+    imgDate
 ) {
     // Creating the elements needed to create the art frame
     let figureElement = document.createElement("figure");
@@ -47,8 +53,8 @@ function createArtFrame(imgSrc,
         framePreviewImg.src = imgSrc;
         framePreviewImg.alt = imgAlt;
         framePreviewTitle.textContent = imgTitle;
-        framePreviewDate.textContent = imgDate;
         framePreviewDescription.textContent = imgDescription;
+        framePreviewDate.textContent = imgDate;
     }
 }
 
@@ -67,8 +73,8 @@ async function loadArtFrames() {
                 json[i].image,
                 json[i].alt,
                 json[i].title,
-                json[i].date,
-                json[i].description
+                `Description: ${json[i].description}`,
+                `Date: ${json[i].date}`
             );
         }
     } catch(e) {
