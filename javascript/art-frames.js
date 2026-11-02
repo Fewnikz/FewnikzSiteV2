@@ -73,7 +73,7 @@ async function loadArtFrames() {
                 json[i].image,
                 json[i].alt,
                 json[i].title,
-                `Description: ${json[i].description}`,
+                json[i].description,
                 `Date: ${json[i].date}`
             );
         }

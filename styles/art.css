@@ -114,6 +114,7 @@ Which appears when the dialog opens and gets focus */
 
 .frame-preview figcaption span {
     display: none;
+    border: #5a1a08 solid 3px;
 }
 
 .view-more-text {
